@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 const Navbar = () => {
     return (
-        <div className='w-full h-[15vh] mx-auto items-center justify-between flex font-titleFont sticky'>
+        <div className='w-full h-[15vh] mx-auto items-center justify-between flex font-titleFont border-b-[1px] border-b-gray-700'>
             <img className='w-[50px] rounded-full cursor-pointer ' src={logo} alt="" />
             <div>
                 <ul className='flex items-center gap-10'>
