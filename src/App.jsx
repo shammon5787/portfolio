@@ -5,13 +5,13 @@ import Features from './Components/Features/Features'
 
 const App = () => {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText">
+    <section className="w-full h-full bg-bodyColor text-lightText">
       <div className='max-w-screen-xl mx-auto px-16'>
-      <Navbar />
-      <Banner />
-      <Features />
+        <Navbar />
+        <Banner />
+        <Features />
       </div>
-    </div>
+    </section>
   )
 }
 

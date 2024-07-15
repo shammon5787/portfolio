@@ -11,3 +11,9 @@
         @apply w-16 h-16 bg-black bg-opacity-25 text-2xl items-center justify-center rounded-md shadow-md text-center hover:bg-opacity-40 transition-all duration-500 cursor-pointer hover:*:translate-y-1 hover:text-designColor flex
     }
 }
+/* body{
+    background-color:  #180808;;
+} */
+/* .active {
+    color: white;
+} */
