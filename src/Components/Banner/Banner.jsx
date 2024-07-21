@@ -15,7 +15,6 @@ const Banner = () => {
                     <LeftBanner />
                 </div>
                 <RightBanner />
-              
             </div>
         </section>
     )
