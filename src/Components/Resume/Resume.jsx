@@ -11,24 +11,24 @@ const Resume = () => {
     const [experienceData, setexperienceData] = useState(false)
     const [achievementsData, setachievementsData] = useState(false)
     return (
-        <section id='resume' className='w-full py-20 border-b-[1px] border-b-black '>
+        <section id='resume' className='w-full h-auto mt-10 border-b-[1px] border-b-black pb-20 '>
             <div className='flex flex-col items-center justify-center text-center'>
                 <Title title="7+ Years of Experience In Development" des="My Projects" />
             </div>
             <div>
-                <ul className='grid grid-cols-4 w-full'>
-                    <li onClick={() => seteducationData(true)} className='resumeLi'>Education</li>
-                    <li onClick={() => seteducationData(false) & setskillsData(true)} className='resumeLi'>Professional Skills</li>
-                    <li className='resumeLi'>Experience</li>
-                    <li className='resumeLi'>Acievements</li>
+                <ul className='grid lg:grid-cols-4 mt-5 w-full '>
+                    <li onClick={() => seteducationData(true) & setskillsData(false) & setexperienceData(false) & setachievementsData(false)} className = {`${educationData ? "border border-yellow-400" : ""} resumeLi`} >Education</li>
+                    <li onClick={() => seteducationData(false) & setskillsData(true) & setexperienceData(false) & setachievementsData(false)} className = {`${skillsData ? "border border-yellow-400" : ""} resumeLi`}>Professional Skills</li>
+                    <li onClick={()=>seteducationData(false) & setskillsData(false) & setexperienceData(true) & setachievementsData(false)} className = {`${experienceData ? "border border-yellow-400" : ""} resumeLi`}>Experience</li>
+                    <li onClick={()=>seteducationData(false) & setskillsData(false) & setexperienceData(false) & setachievementsData(true)} className = {`${achievementsData ? "border border-yellow-400" : ""} resumeLi`}>Acievements</li>
                 </ul>
             </div>
             {
                 educationData && <Education />
             }
            {  skillsData && <Skills />}
-            {/* <Achievements /> */}
-            {/* <Experience /> */}
+            {experienceData && <Experience/>}
+            {achievementsData && <Achievements/>}
         </section>
     )
 }
