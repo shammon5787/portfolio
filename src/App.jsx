@@ -4,6 +4,7 @@ import Banner from './Components/Banner/Banner'
 import Features from './Components/Features/Features'
 import Project from './Components/Projects/Project'
 import Resume from './Components/Resume/Resume'
+import Contact from './Components/Contact/Contact'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Features />
         <Project />
         <Resume />
+        <Contact />
       </div>
     </section>
   )
